@@ -1,8 +1,11 @@
 # EstimatePaintCost
 
-This program estimates the cost of painting a room with the following criteria:
+This program estimates the cost of painting a room by:
 
-Main() method prompts a user for length and width of a room in feet.
-A method that accepts the values and then computes the cost of painting the room, assuming the room is rectangular and has four full walls and 9-foot ceilings. 
-The area of one wall will be length of the wall times the height of the wall. 
-The price of the job is $6 per square foot.
+- Prompting the user for length and width of a room in feet - Within the Main() method
+- Accepting the values and computing the cost of painting the room - Using a separate method
+
+### Program Guidelines:
+  - The rooms are rectangular and have four foot walls and nine foot ceilings
+  - The area of one wall will be length of the wall times the height of the wall
+  - The price of the job is $6 per square foot
