@@ -2,6 +2,18 @@
 
 This program estimates the cost of painting a room.
 
+## Usage/Examples
+
+```
+Please enter the room length in feet:
+10
+Enter the room width in feet:
+11
+The cost of painting this room is: $3588
+
+Press any key to close this window . . .
+```
+
 ### Program Logic
 
 - Prompt the user for length and width of a room in feet within the Main() method
