@@ -15,28 +15,33 @@ namespace EstimatePaintCost
     {
         static void Main(string[] args)
         {
-            double length;
-            double width;
-            double paintEstimate;
+            float length;
+            float width;
+            decimal paintEstimate;
 
             //Prompt the user for room length and width
-            WriteLine("Please enter the room length in feet: ");
-            length = Convert.ToDouble(ReadLine());
-
-            WriteLine("Enter the room width in feet: ");
-            width = Convert.ToDouble(ReadLine());
+            length = GetInput("Please enter the room length in feet: ");
+            width = GetInput("Enter the room width in feet: ");
 
             //Call CalcPaintCost method, input arguments and display result
             paintEstimate = CalcPaintCost(length, width);
-            WriteLine("The cost of painting this room is: $" + paintEstimate);
+            WriteLine($"The cost of painting this room is: ${paintEstimate:F2}");
         }
-        //Calculate painting cost method
-        static double CalcPaintCost(double roomLength, double roomWidth)
+
+        //Method to prompt the user for input
+        static float GetInput(string prompt)
         {
-            const double PRICE_PER_SQUARE = 6;
-            const double ROOM_HEIGHT = 9;
-            double surfaceArea;
-            double paintCost;
+            WriteLine(prompt);
+            return Convert.ToSingle(ReadLine());
+        }
+
+        //Calculate painting cost method
+        static decimal CalcPaintCost(float roomLength, float roomWidth)
+        {
+            const float PRICE_PER_SQUARE = 6;
+            const float ROOM_HEIGHT = 9;
+            float surfaceArea;
+            decimal paintCost;
 
             surfaceArea = 2 * (roomLength * roomWidth + roomLength * ROOM_HEIGHT + roomWidth * ROOM_HEIGHT);
             paintCost = surfaceArea * PRICE_PER_SQUARE;
