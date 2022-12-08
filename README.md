@@ -1,24 +1,21 @@
 # EstimatePaintCost
 
-This program estimates the cost of painting a room given its dimensions.
+This program estimates the cost of painting a room based on user-specified length and width. It is designed to be simple and easy to use, with a clear and concise output.
 
-## Usage/Examples
+# Features
+
+- Prompts the user for room length and width
+- Calculates the total painting cost using a user-defined formula
+- Displays the final result in a clear and easy-to-read format
+
+## Example
 
 ```
 Please enter the room length in feet:
-10
+15
 Enter the room width in feet:
-11
-The cost of painting this room is: $3588
+10
+The cost of painting this room is: $900.00
 
 Press any key to close this window . . .
 ```
-
-### Program Logic
-
-- Prompt the user for length and width of a room in feet within the Main() method
-- Accept the values and compute the cost of painting the room using a separate method
-- Assume that:
-  1. The rooms are rectangular and have four foot walls and nine foot ceilings
-  2. The area of one wall will be length of the wall times the height of the wall
-  3. The price of the job is $6 per square foot
