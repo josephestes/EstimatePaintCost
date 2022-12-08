@@ -2,7 +2,7 @@
 
 This program estimates the cost of painting a room based on user-specified length and width. It is designed to be simple and easy to use, with a clear and concise output.
 
-# Features
+## Features
 
 - Prompts the user for room length and width
 - Calculates the total painting cost using a user-defined formula
